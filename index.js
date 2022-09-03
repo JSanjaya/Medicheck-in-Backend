@@ -25,8 +25,8 @@ app.use(cookieParser(process.env.COOKIE_SECRET));
 
 const corsOptions = {
   origin: [
-    "http://localhost:3000",
-    "https://medicheck-in.netlify.app/"
+    "https://medicheck-in.netlify.app/",
+    "http://localhost:3000"
   ],
   credentials: true,
 };
