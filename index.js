@@ -33,7 +33,8 @@ var corsOptions = {
 app.use(cors(corsOptions));
 
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', "https://medicheck-in.netlify.app/");
+  res.header('Access-Control-Allow-Origin', "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
   next();
 });
 
