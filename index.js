@@ -32,6 +32,11 @@ var corsOptions = {
 // Then pass them to cors:
 app.use(cors(corsOptions));
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', "https://medicheck-in.netlify.app/");
+  next();
+});
+
 app.use(passport.initialize());
 
 app.use("/users", userRouter);
