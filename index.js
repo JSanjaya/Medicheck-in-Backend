@@ -4,10 +4,7 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const passport = require("passport");
 
-if (process.env.NODE_ENV !== "production") {
-  // Load environment variables from .env file in non prod environments
-  require("dotenv").config();
-}
+require("dotenv").config();
 require("./utils/connectDB");
 
 require("./strategies/JwtStrategy");
@@ -32,7 +29,7 @@ var corsOptions = {
 // Then pass them to cors:
 app.use(cors(corsOptions));
 
-app.use((req, res, next) => {
+app.all((req, res, next) => {
   res.header('Access-Control-Allow-Origin', "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   next();
