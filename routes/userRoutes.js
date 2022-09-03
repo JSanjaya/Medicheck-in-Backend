@@ -11,10 +11,6 @@ const {
     verifyUser,
   } = require("../authenticate")
 
-  router.all('*', function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', '*');
-    next();
-  });
 
 router.post("/signup", (req, res, next) => {
   // Verify that first name is not empty

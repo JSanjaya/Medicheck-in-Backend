@@ -22,18 +22,13 @@ app.use(cookieParser(process.env.COOKIE_SECRET));
 
 
 var corsOptions = {
-  origin: ["https://medicheck-in.netlify.app/", "http://localhost:3000"],
+  origin: ["https://medicheck-in.netlify.app", "http://localhost:3000"],
   credentials: true,
 }
 
 // Then pass them to cors:
 app.use(cors(corsOptions));
 
-app.all((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', "*");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  next();
-});
 
 app.use(passport.initialize());
 
