@@ -24,15 +24,8 @@ app.use(cookieParser(process.env.COOKIE_SECRET));
 //Add the client URL to the CORS policy
 
 
-var whitelist = ["https://medicheck-in.netlify.app/", "http://localhost:3000"]
 var corsOptions = {
-  origin: function (origin, callback) {
-    if (!origin || whitelist.indexOf(origin) !== -1) {
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
-    }
-  },
+  origin: ["https://medicheck-in.netlify.app/", "http://localhost:3000"],
   credentials: true,
 }
 
