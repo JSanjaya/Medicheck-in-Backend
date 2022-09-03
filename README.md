@@ -1,7 +1,3 @@
-# Getting Started with Create React App
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-
 # Works Cited
 * Title: Authentication in React using Express, Node, Passport and MongoDB
 * Author: Abhishek EH
