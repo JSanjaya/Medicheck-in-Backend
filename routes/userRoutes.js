@@ -11,6 +11,13 @@ const {
     verifyUser,
   } = require("../authenticate")
 
+  router.all('/', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "https://medicheck-in.netlify.app/");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+   });
+  
+
 router.post("/signup", (req, res, next) => {
   // Verify that first name is not empty
   if (!req.body.firstName) {
