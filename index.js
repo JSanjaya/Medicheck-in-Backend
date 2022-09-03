@@ -8,7 +8,7 @@ if (process.env.NODE_ENV !== "production") {
   // Load environment variables from .env file in non prod environments
   require("dotenv").config();
 }
-require("./utils/connectdb");
+require("./utils/connectDB");
 
 require("./strategies/JwtStrategy");
 require("./strategies/LocalStrategy");
