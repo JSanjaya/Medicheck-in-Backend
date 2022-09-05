@@ -10,6 +10,21 @@ const Session = new Schema({
   },
 })
 
+const Record = new Schema({
+    answer: {
+      type: Boolean,
+      default: 0,
+    },
+    notes: {
+      type: String,
+      default: "",
+    },
+    day: {
+      type: String,
+      default: ""
+    }
+})
+
 const User = new Schema({
   firstName: {
     type: String,
@@ -23,9 +38,8 @@ const User = new Schema({
     type: String,
     default: "local",
   },
-  points: {
-    type: Number,
-    default: 50,
+  records: {
+    type: [Record]
   },
   refreshToken: {
     type: [Session],
