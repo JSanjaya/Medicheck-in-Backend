@@ -1,7 +1,7 @@
 # This is the backend system for the Medicheck-in app. 
 ## Please check out
 https://github.com/JSanjaya/Medicheck-in-Frontend
-# for a detailed project overview
+## for a detailed project overview
 
 # Live Demo: 
 https://medicheck-in.netlify.app/
