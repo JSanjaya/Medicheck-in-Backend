@@ -6,10 +6,11 @@ https://github.com/JSanjaya/Medicheck-in-Frontend
 # Live Demo: 
 https://medicheck-in.netlify.app/
 
-
-# Works Cited
+## Works Cited
+* Note: This project's authentication/authorization system was taken from this tutorial with minor modifications.
 * Title: Authentication in React using Express, Node, Passport and MongoDB
 * Author: Abhishek EH
 * Date: 2021
 * Availability: https://www.codingdeft.com/posts/react-authentication-mern-node-passport-express-mongo/
-* Note: This project's authentication/authorization system was taken from this tutorial with minor modifications.
+* https://github.com/collegewap/mern-auth-client
+* https://github.com/collegewap/mern-auth-server
